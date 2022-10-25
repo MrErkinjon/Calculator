@@ -52,22 +52,29 @@
             <TextView
                 style="@style/number_text_style"
                 android:onClick="clearAll"
+                android:textSize="18sp"
+                android:textColor="#D50000"
                 android:text="CLR" />
 
             <ImageView
                 style="@style/number_text_style"
                 android:onClick="clearOne"
                 android:scaleType="center"
+                android:tint="@color/white"
                 android:src="@drawable/back" />
 
             <TextView
                 style="@style/number_text_style"
                 android:onClick="brackets"
+                android:textSize="18sp"
+                android:textColor="@color/white"
                 android:text="(" />
 
             <TextView
                 style="@style/number_text_style"
                 android:onClick="brackets"
+                android:textSize="18sp"
+                android:textColor="@color/white"
                 android:text=")" />
         </LinearLayout>
 
@@ -81,20 +88,28 @@
             <TextView
                 style="@style/number_text_style"
                 android:onClick="showView"
+                android:textSize="18sp"
+                android:textColor="@color/white"
                 android:text="7" />
 
             <TextView
                 style="@style/number_text_style"
                 android:onClick="showView"
+                android:textSize="18sp"
+                android:textColor="@color/white"
                 android:text="8" />
 
             <TextView
                 style="@style/number_text_style"
+                android:textSize="18sp"
+                android:textColor="@color/white"
                 android:onClick="showView"
                 android:text="9" />
 
             <TextView
                 style="@style/number_text_style"
+                android:textSize="18sp"
+                android:textColor="@color/white"
                 android:onClick="operator"
                 android:text="/" />
         </LinearLayout>
@@ -109,21 +124,29 @@
             <TextView
                 style="@style/number_text_style"
                 android:onClick="showView"
+                android:textSize="18sp"
+                android:textColor="@color/white"
                 android:text="4" />
 
             <TextView
                 style="@style/number_text_style"
                 android:onClick="showView"
+                android:textSize="18sp"
+                android:textColor="@color/white"
                 android:text="5" />
 
             <TextView
                 style="@style/number_text_style"
                 android:onClick="showView"
+                android:textSize="18sp"
+                android:textColor="@color/white"
                 android:text="6" />
 
             <TextView
                 style="@style/number_text_style"
                 android:onClick="operator"
+                android:textSize="18sp"
+                android:textColor="@color/white"
                 android:text="*" />
         </LinearLayout>
 
@@ -137,21 +160,29 @@
             <TextView
                 style="@style/number_text_style"
                 android:onClick="showView"
+                android:textSize="18sp"
+                android:textColor="@color/white"
                 android:text="1" />
 
             <TextView
                 style="@style/number_text_style"
                 android:onClick="showView"
+                android:textSize="18sp"
+                android:textColor="@color/white"
                 android:text="2" />
 
             <TextView
                 style="@style/number_text_style"
                 android:onClick="showView"
+                android:textSize="18sp"
+                android:textColor="@color/white"
                 android:text="3" />
 
             <TextView
                 style="@style/number_text_style"
                 android:onClick="operator"
+                android:textSize="18sp"
+                android:textColor="@color/white"
                 android:text="+" />
         </LinearLayout>
 
@@ -165,12 +196,16 @@
             <TextView
                 style="@style/number_text_style"
                 android:onClick="dot"
+                android:textSize="18sp"
+                android:textColor="@color/white"
                 android:text="."
                 android:textStyle="bold" />
 
             <TextView
                 style="@style/number_text_style"
                 android:onClick="showView"
+                android:textSize="18sp"
+                android:textColor="@color/white"
                 android:text="0" />
 
             <TextView
@@ -178,12 +213,16 @@
                 android:background="@drawable/equal_background"
                 android:onClick="equal"
                 android:text="="
+                android:textSize="18sp"
+                android:textColor="@color/white"
                 android:textStyle="bold" />
 
             <TextView
                 style="@style/number_text_style"
                 android:onClick="operator"
                 android:text="-"
+                android:textSize="18sp"
+                android:textColor="@color/white"
                 android:textStyle="bold" />
         </LinearLayout>
     </LinearLayout>
