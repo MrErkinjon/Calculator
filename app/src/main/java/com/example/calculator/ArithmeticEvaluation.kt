@@ -1,6 +1,8 @@
 package com.example.calculator
 
-import java.util.Stack
+import java.text.DecimalFormat
+import java.text.DecimalFormatSymbols
+import java.util.*
 
 class ArithmeticEvaluation {
     private fun notOperator(char: Char):Boolean=when(char)
@@ -47,7 +49,19 @@ class ArithmeticEvaluation {
 
     companion object{
         fun Double?.formattedAmount(): String {
-            return TextUtils.getFormattedAmount(this)
+            return getFormattedAmount(this)
+        }
+        fun getFormattedAmount(amount: Double?): String {
+            if (amount == null) {
+                return ""
+            }
+
+            val formatSymbols = DecimalFormatSymbols(Locale.ENGLISH)
+            formatSymbols.decimalSeparator = '.'
+            formatSymbols.groupingSeparator = ' '
+            val formatter = DecimalFormat("###,###.##", formatSymbols)
+            var result = formatter.format(amount)
+            return result
         }
     }
 
